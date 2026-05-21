@@ -1,9 +1,5 @@
-from celery import result
 from flask import Blueprint, request, session, jsonify
 from bson.objectid import ObjectId
-from PIL import Image, ImageOps
-from werkzeug.utils import secure_filename
-import os
 import datetime
 import re
 import pymongo
@@ -11,9 +7,6 @@ from utils.composite import generate_composite_icon
 
 from utils.shared_api import (
     db,
-    UPLOAD_FOLDER,
-    STATIC_WEB_URL,
-    allowed_file,
     get_user_by_email,
     create_circle,
     join_circle_by_invite,

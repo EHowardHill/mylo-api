@@ -4,9 +4,9 @@ base = "/var/www/mylo_api/"
 
 file_list = [
     base + "app.py",
-    base + "shared_api.py",
-    base + "composite.py",
-    base + "encryption.py",
+    base + "utils/shared_api.py",
+    base + "utils/composite.py",
+    base + "utils/encryption.py",
     base + "routes/posts.py",
     base + "routes/push.py",
     base + "routes/api.py",
